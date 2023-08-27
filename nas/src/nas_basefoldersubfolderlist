@@ -18,6 +18,8 @@ video/movies,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:r-x
 video/musicvideo,root,users,0750,:--x,65605:rwx,65606:000,65607:rwx,65608:rwx
 video/pron,root,users,0750,:--x,65605:rwx,65606:000,65607:rwx,65608:rwx
 video/series,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:r-x
+video/anime,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:r-x
+video/show,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:r-x
 video/transcode,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:000
 
 # Video Folders (stream is for low bandwidth HEVC video)
@@ -29,6 +31,8 @@ video/stream/movies,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:r-x
 video/stream/musicvideo,root,users,0750,:--x,65605:rwx,65606:000,65607:rwx,65608:rwx
 video/stream/pron,root,users,0750,:--x,65605:rwx,65606:000,65607:rwx,65608:rwx
 video/stream/series,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:r-x
+video/stream/anime,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:r-x
+video/stream/show,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:r-x
 
 # Audio Book Folders
 audio/audiobooks,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:r-x
@@ -48,6 +52,8 @@ public/autoadd/direct_import,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,
 public/autoadd/torrent,root,users,0750,:--x,65605:r-x,65607:r-x,65606:000,65608:r--
 public/autoadd/torrent/manual-movies,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 public/autoadd/torrent/manual-series,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
+public/autoadd/torrent/manual-anime,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
+public/autoadd/torrent/manual-show,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 public/autoadd/torrent/manual-documentary-series,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 public/autoadd/torrent/manual-documentary-movies,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 public/autoadd/torrent/readarr-books,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
@@ -55,10 +61,14 @@ public/autoadd/torrent/radarr-movies,root,users,0750,:--x,65605:rwx,65607:rwx,65
 public/autoadd/torrent/lidarr-music,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 public/autoadd/torrent/whisparr-pron,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 public/autoadd/torrent/sonarr-series,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
+public/autoadd/torrent/sonarr-anime,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
+public/autoadd/torrent/sonarr-show,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 public/autoadd/torrent/manual-unsorted,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 public/autoadd/usenet,root,users,0750,:--x,65605:r-x,65607:r-x,65606:000,65608:r--
 public/autoadd/usenet/manual-movies,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 public/autoadd/usenet/manual-series,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
+public/autoadd/usenet/manual-anime,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
+public/autoadd/usenet/manual-show,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 public/autoadd/usenet/manual-documentary-series,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 public/autoadd/usenet/manual-documentary-movies,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 public/autoadd/usenet/readarr-books,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
@@ -66,6 +76,8 @@ public/autoadd/usenet/radarr-movies,root,users,0750,:--x,65605:rwx,65607:rwx,656
 public/autoadd/usenet/lidarr-music,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 public/autoadd/usenet/whisparr-pron,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 public/autoadd/usenet/sonarr-series,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
+public/autoadd/usenet/sonarr-anime,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
+public/autoadd/usenet/sonarr-show,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 public/autoadd/usenet/manual-unsorted,root,users,0750,:--x,65605:rwx,65607:rwx,65606:000,65608:rw-
 
 # Vidcoderr Folders
